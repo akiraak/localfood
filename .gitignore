@@ -1,0 +1,7 @@
+server/.pyenv
+__pycache__
+server/env_vars*
+server/terraform/key-localfood*
+server/var_envs/
+.terraform*
+terraform.*

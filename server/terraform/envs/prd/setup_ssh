@@ -1,0 +1,4 @@
+#!/bin/bash
+scp ~/.ssh/key-localfood-app localfood-prd-management:~/.ssh/
+scp ~/.ssh/key-localfood-management localfood-prd-management:~/.ssh/
+scp config localfood-prd-management:~/.ssh/
