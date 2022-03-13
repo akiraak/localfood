@@ -37,6 +37,7 @@ class User(UserMixin, db.Model):
         db_config = DBConfig.get()
         return {
             'id': self.id,
+            'name': self.name,
             'name_display': self.name_display,
             'push_fcm_token': self.push_fcm_token if self.push_fcm_token != None else "",
         }

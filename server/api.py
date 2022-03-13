@@ -41,8 +41,7 @@ def v1_signup():
     user = User.create(
         name=username,
         name_display=name_display,
-        password=password,
-        branch_id=1)
+        password=password)
     return responseSuccess(user.to_dict())
 
 
@@ -56,7 +55,7 @@ def v1_signup_form():
         if User.query.filter_by(name=username).first() is not None:
             return responseFailed('Already exists.')
 
-        User.create(name=username, name_display=username, password=password, branch_id=1)
+        User.create(name=username, name_display=username, password=password)
         return responseSuccess({})
     return render_template('signup.html')
 
