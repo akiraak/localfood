@@ -3,7 +3,8 @@ import Alamofire
 import SwiftyJSON
 
 class ServerAPI {
-    static let serverUrl = "https://akiraak1.ngrok.io/"
+    //static let serverUrl = "https://akiraak1.ngrok.io/"
+    static let serverUrl = "https://localfood.mspv2.com/"
 
     static func makeApi(_ api: String) -> String {
         let url = String(format: "%@api/v1/%@", serverUrl, api)
