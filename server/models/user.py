@@ -8,6 +8,8 @@ from . import DBConfig
 
 
 class User(UserMixin, db.Model):
+    __tablename__ = 'users'
+
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(120), index=True, unique=True, nullable=False)
     name_display = db.Column(db.String(120))

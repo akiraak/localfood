@@ -23,15 +23,18 @@ class Geometry(UserDefinedType):
         return func.ST_AsText(col, type_=self)
 
 
-class Spot(db.Model):
+class Market(db.Model):
+    __tablename__ = 'markets'
+
     id = db.Column(db.Integer, primary_key=True)
-    filename = db.Column(db.String(32), index=True, nullable=False, server_default='')
+    name = db.Column(db.String(255), nullable=False)
+    address = db.Column(db.String(255), nullable=False)
+    opening_hours = db.Column(db.String(255), nullable=False)
     geopoint = db.Column(Geometry, index=True, nullable=False)
-    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
-    created_at = db.Column(db.DateTime, nullable=False, server_default=current_timestamp())
+    created_at = db.Column(db.DateTime, server_default=current_timestamp())
 
     @classmethod
-    def create(cls, image_l, image_m, image_s, lat, lng, user_id):
+    def create(cls, name, lat, lng, user_id):
         model = cls()
         db.session.add(model)
         db.session.commit()
