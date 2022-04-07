@@ -2,7 +2,7 @@ from config import Config
 from flask import Blueprint, request, jsonify, render_template, redirect
 from flask_login import LoginManager, login_user, logout_user, login_required, current_user
 from app import app, db
-from models import User, DBConfig
+from models import User, DBConfig, Market
 from tools import fcm
 
 api_routes = Blueprint('api', __name__)
@@ -113,3 +113,11 @@ def v1_set_push_fcm_token():
 @login_required
 def v1_user():
     return responseSuccess(current_user.to_dict())
+
+
+@api_routes.route('/v1/markets')
+#@login_required
+def markets():
+    markets = Market.query.all()
+    markets_dist = [m.to_dict() for m in markets]
+    return responseSuccess({'markets': markets_dist})

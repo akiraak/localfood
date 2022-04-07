@@ -96,19 +96,13 @@ class Market(db.Model):
         return float(lat), float(lng)
 
     def to_dict(self):
-        lat, lng = self.latlng()
-        user = None
-        if self.user_id:
-            user = User.query.get(self.user_id)
         return {
             'id': int(self.id),
-            'lat': lat,
-            'lng': lng,
-            #'picture_l': self.pictureUrl('l'),
-            #'picture_m': self.pictureUrl('m'),
-            #'picture_s': self.pictureUrl('s'),
-            #'distributed_point': self.distributed_point,
-            'user': user.to_dict() if user else None,
+            'name': self.name,
+            'address': self.address,
+            'opening_hours': self.opening_hours,
+            'lat': self.lat,
+            'lng': self.lng,
             'created_at': self.created_at.strftime("%Y-%m-%d %H:%M:%S"),
         }
 
