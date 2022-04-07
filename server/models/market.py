@@ -30,7 +30,8 @@ class Market(db.Model):
     name = db.Column(db.String(255), nullable=False)
     address = db.Column(db.String(255), nullable=False)
     opening_hours = db.Column(db.String(255), nullable=False)
-    geopoint = db.Column(Geometry, index=True, nullable=False)
+    lat = db.Column(db.Float(), nullable=False)
+    lng = db.Column(db.Float(), nullable=False)
     created_at = db.Column(db.DateTime, server_default=current_timestamp())
 
     @classmethod
