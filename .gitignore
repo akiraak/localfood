@@ -1,3 +1,4 @@
+.DS_Store
 server/.pyenv
 __pycache__
 server/env_vars*

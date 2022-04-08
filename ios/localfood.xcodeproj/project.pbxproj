@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		54613BCFFDC4EE29F941714D /* Pods_localfood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A88D6770BEA4197CEFEEB5 /* Pods_localfood.framework */; };
+		6B7FB0A327FFF5DE00E304FF /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7FB0A227FFF5DE00E304FF /* Market.swift */; };
 		6B9B3CC027DD6FAE0073324C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9B3CBF27DD6FAE0073324C /* AppDelegate.swift */; };
 		6B9B3CC227DD6FAE0073324C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9B3CC127DD6FAE0073324C /* SceneDelegate.swift */; };
 		6B9B3CC727DD6FAE0073324C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B9B3CC527DD6FAE0073324C /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 		27A88D6770BEA4197CEFEEB5 /* Pods_localfood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_localfood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38D1F5157C2B0D4F26AE83A4 /* Pods-localfood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-localfood.release.xcconfig"; path = "Target Support Files/Pods-localfood/Pods-localfood.release.xcconfig"; sourceTree = "<group>"; };
 		545016FAA1D366AFB937BAA8 /* Pods-localfoodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-localfoodTests.release.xcconfig"; path = "Target Support Files/Pods-localfoodTests/Pods-localfoodTests.release.xcconfig"; sourceTree = "<group>"; };
+		6B7FB0A227FFF5DE00E304FF /* Market.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
 		6B9B3CBC27DD6FAE0073324C /* localfood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = localfood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B9B3CBF27DD6FAE0073324C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B9B3CC127DD6FAE0073324C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				6B9B3D0427DE763C0073324C /* User.swift */,
+				6B7FB0A227FFF5DE00E304FF /* Market.swift */,
 			);
 			path = Datas;
 			sourceTree = "<group>";
@@ -458,6 +461,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B9B3CFD27DE751D0073324C /* FirstViewController.swift in Sources */,
+				6B7FB0A327FFF5DE00E304FF /* Market.swift in Sources */,
 				6B9B3CFB27DE751D0073324C /* SignViewController.swift in Sources */,
 				6B9B3CFA27DE751D0073324C /* SignupViewController.swift in Sources */,
 				6B9B3CF327DD845F0073324C /* LocationsViewController.swift in Sources */,
@@ -647,7 +651,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = N38G4DGA67;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = localfood/Info.plist;
@@ -678,7 +682,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = N38G4DGA67;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = localfood/Info.plist;

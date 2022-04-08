@@ -120,4 +120,29 @@ class ServerAPI {
             resultFunc(false, error.errorDescription)
         }
     }
+
+    static func markets(resultFunc: @escaping (_ success: Bool, _ message: String?) -> ()) {
+        let url = makeApi("markets")
+        AF.request(url)
+        .validate(statusCode: 200..<300)
+        .responseJSON { response in
+            switch response.result {
+            case .success(let value):
+                let json = JSON(value)
+                if json["status"] == "ok" {
+                    Markets.setup(json: json["data"]["markets"])
+                    if Markets.shared != nil {
+                        resultFunc(true, nil)
+                    } else {
+                        resultFunc(false, nil)
+                    }
+                } else {
+                    let message = json["message"].string
+                    resultFunc(false, message)
+                }
+            case .failure(let error):
+                resultFunc(false, error.errorDescription)
+            }
+        }
+    }
 }
