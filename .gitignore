@@ -7,3 +7,6 @@ server/var_envs/
 .terraform*
 terraform.*
 server/strage_tools/rds/*.sql
+
+xcuserdata/
+

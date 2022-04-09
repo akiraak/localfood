@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5X2-Ji-Sou">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Account-->
+        <scene sceneID="68m-RA-o4m">
+            <objects>
+                <viewController id="5X2-Ji-Sou" customClass="AccountViewController" customModule="localfood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jn8-JT-NV1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Display Name :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rO5-xZ-B45">
+                                <rect key="frame" x="66.5" y="116" width="114" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iL2-HF-qFR">
+                                <rect key="frame" x="153.5" y="74" width="27" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdJ-u0-EuP">
+                                <rect key="frame" x="152" y="750" width="110" height="43"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign out">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pushSignout:" destination="5X2-Ji-Sou" eventType="touchUpInside" id="2mt-p2-4Jk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qul-RK-37y">
+                                <rect key="frame" x="188" y="74" width="206" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzy-Fb-BgY">
+                                <rect key="frame" x="188" y="116" width="206" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TIZ-PH-TJo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TIZ-PH-TJo" firstAttribute="trailing" secondItem="qul-RK-37y" secondAttribute="trailing" constant="20" id="7pn-MS-Jv0"/>
+                            <constraint firstItem="wdJ-u0-EuP" firstAttribute="centerX" secondItem="Jn8-JT-NV1" secondAttribute="centerX" id="Q7Z-x9-KeZ"/>
+                            <constraint firstItem="qul-RK-37y" firstAttribute="leading" secondItem="iL2-HF-qFR" secondAttribute="trailing" constant="7.5" id="Rf4-ML-bDq"/>
+                            <constraint firstItem="fzy-Fb-BgY" firstAttribute="leading" secondItem="qul-RK-37y" secondAttribute="leading" id="UfQ-AY-aJQ"/>
+                            <constraint firstItem="fzy-Fb-BgY" firstAttribute="centerY" secondItem="rO5-xZ-B45" secondAttribute="centerY" id="e5G-VB-u2s"/>
+                            <constraint firstItem="rO5-xZ-B45" firstAttribute="top" secondItem="iL2-HF-qFR" secondAttribute="bottom" constant="20" id="fvX-fC-19c"/>
+                            <constraint firstItem="iL2-HF-qFR" firstAttribute="top" secondItem="TIZ-PH-TJo" secondAttribute="top" constant="30" id="nWh-eh-TwX"/>
+                            <constraint firstItem="iL2-HF-qFR" firstAttribute="trailing" secondItem="rO5-xZ-B45" secondAttribute="trailing" id="r4W-uC-dUb"/>
+                            <constraint firstItem="iL2-HF-qFR" firstAttribute="centerX" secondItem="Jn8-JT-NV1" secondAttribute="centerX" constant="-40" id="rHy-tw-EQu"/>
+                            <constraint firstItem="qul-RK-37y" firstAttribute="centerY" secondItem="iL2-HF-qFR" secondAttribute="centerY" id="wt9-BK-A7v"/>
+                            <constraint firstItem="wdJ-u0-EuP" firstAttribute="bottom" secondItem="TIZ-PH-TJo" secondAttribute="bottom" constant="-20" id="yYt-Y1-w2L"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Account" image="person" catalog="system" id="hLl-4D-hmd"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="displayNameLabel" destination="fzy-Fb-BgY" id="MZB-jO-oiz"/>
+                        <outlet property="idLabel" destination="qul-RK-37y" id="t1z-OY-prP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dZn-c6-Dj3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="1409.5982142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
