@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jvq-cs-K6o">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Markets-->
+        <scene sceneID="dAb-6s-bOf">
+            <objects>
+                <viewController id="Jvq-cs-K6o" customClass="MarketsViewController" customModule="localfood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6ep-6c-Qbf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IFf-bf-6zs">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Markets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qv6-yV-3SV">
+                                        <rect key="frame" x="20" y="52" width="73" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgQ-hx-fhS">
+                                        <rect key="frame" x="360" y="49" width="46" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="plus.app" catalog="system"/>
+                                        <connections>
+                                            <action selector="pushAdd:" destination="Jvq-cs-K6o" eventType="touchUpInside" id="Njn-hx-wWd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="vgQ-hx-fhS" secondAttribute="trailing" constant="8" id="YVo-NQ-aag"/>
+                                    <constraint firstItem="vgQ-hx-fhS" firstAttribute="top" secondItem="IFf-bf-6zs" secondAttribute="top" constant="49" id="YnY-Dj-dpx"/>
+                                    <constraint firstAttribute="height" constant="80" id="kVQ-ff-B0l"/>
+                                </constraints>
+                            </view>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ap6-Bj-j1E">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cXr-Qb-XpJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ap6-Bj-j1E" firstAttribute="top" secondItem="IFf-bf-6zs" secondAttribute="bottom" constant="8" symbolic="YES" id="CKg-0z-PyU"/>
+                            <constraint firstItem="IFf-bf-6zs" firstAttribute="trailing" secondItem="cXr-Qb-XpJ" secondAttribute="trailing" id="GBW-aU-XsV"/>
+                            <constraint firstItem="ap6-Bj-j1E" firstAttribute="trailing" secondItem="cXr-Qb-XpJ" secondAttribute="trailing" id="Na9-71-LGz"/>
+                            <constraint firstItem="ap6-Bj-j1E" firstAttribute="bottom" secondItem="cXr-Qb-XpJ" secondAttribute="bottom" id="X9z-dX-PYX"/>
+                            <constraint firstItem="IFf-bf-6zs" firstAttribute="leading" secondItem="cXr-Qb-XpJ" secondAttribute="leading" id="dIv-zW-Czj"/>
+                            <constraint firstItem="ap6-Bj-j1E" firstAttribute="leading" secondItem="cXr-Qb-XpJ" secondAttribute="leading" id="eMA-cS-38H"/>
+                            <constraint firstItem="IFf-bf-6zs" firstAttribute="top" secondItem="6ep-6c-Qbf" secondAttribute="top" id="gwW-Wf-HYj"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Markets" image="map" catalog="system" id="P4M-yS-gxJ"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mapView" destination="ap6-Bj-j1E" id="aLA-so-wvz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m4R-SS-Rod" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="806.91964285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="map" catalog="system" width="128" height="110"/>
+        <image name="plus.app" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

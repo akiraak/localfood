@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		54613BCFFDC4EE29F941714D /* Pods_localfood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A88D6770BEA4197CEFEEB5 /* Pods_localfood.framework */; };
+		6B1AC1B8280775AE002FC991 /* MarketCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B1AC1B7280775AE002FC991 /* MarketCardView.xib */; };
+		6B1AC1BC28077695002FC991 /* MarketCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1AC1BB28077695002FC991 /* MarketCardView.swift */; };
 		6B7FB0A327FFF5DE00E304FF /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7FB0A227FFF5DE00E304FF /* Market.swift */; };
 		6B7FB0A5280210DC00E304FF /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7FB0A4280210DC00E304FF /* MainTabBarController.swift */; };
 		6B7FB0A72802390100E304FF /* Markets.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B7FB0A62802390100E304FF /* Markets.storyboard */; };
@@ -22,7 +24,7 @@
 		6B9B3CE127DD6FAF0073324C /* localfoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9B3CE027DD6FAF0073324C /* localfoodUITests.swift */; };
 		6B9B3CE327DD6FAF0073324C /* localfoodUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9B3CE227DD6FAF0073324C /* localfoodUITestsLaunchTests.swift */; };
 		6B9B3CF127DD844C0073324C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9B3CF027DD844C0073324C /* HomeViewController.swift */; };
-		6B9B3CF327DD845F0073324C /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9B3CF227DD845F0073324C /* LocationsViewController.swift */; };
+		6B9B3CF327DD845F0073324C /* MarketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9B3CF227DD845F0073324C /* MarketsViewController.swift */; };
 		6B9B3CF527DD846C0073324C /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9B3CF427DD846C0073324C /* AccountViewController.swift */; };
 		6B9B3CFA27DE751D0073324C /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9B3CF627DE751D0073324C /* SignupViewController.swift */; };
 		6B9B3CFB27DE751D0073324C /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9B3CF727DE751D0073324C /* SignViewController.swift */; };
@@ -57,6 +59,8 @@
 		27A88D6770BEA4197CEFEEB5 /* Pods_localfood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_localfood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38D1F5157C2B0D4F26AE83A4 /* Pods-localfood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-localfood.release.xcconfig"; path = "Target Support Files/Pods-localfood/Pods-localfood.release.xcconfig"; sourceTree = "<group>"; };
 		545016FAA1D366AFB937BAA8 /* Pods-localfoodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-localfoodTests.release.xcconfig"; path = "Target Support Files/Pods-localfoodTests/Pods-localfoodTests.release.xcconfig"; sourceTree = "<group>"; };
+		6B1AC1B7280775AE002FC991 /* MarketCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarketCardView.xib; sourceTree = "<group>"; };
+		6B1AC1BB28077695002FC991 /* MarketCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketCardView.swift; sourceTree = "<group>"; };
 		6B7FB0A227FFF5DE00E304FF /* Market.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
 		6B7FB0A4280210DC00E304FF /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		6B7FB0A62802390100E304FF /* Markets.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Markets.storyboard; sourceTree = "<group>"; };
@@ -75,7 +79,7 @@
 		6B9B3CE027DD6FAF0073324C /* localfoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = localfoodUITests.swift; sourceTree = "<group>"; };
 		6B9B3CE227DD6FAF0073324C /* localfoodUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = localfoodUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6B9B3CF027DD844C0073324C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		6B9B3CF227DD845F0073324C /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
+		6B9B3CF227DD845F0073324C /* MarketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketsViewController.swift; sourceTree = "<group>"; };
 		6B9B3CF427DD846C0073324C /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		6B9B3CF627DE751D0073324C /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		6B9B3CF727DE751D0073324C /* SignViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +123,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B1AC1B6280774A6002FC991 /* Markets */ = {
+			isa = PBXGroup;
+			children = (
+				6B9B3CF227DD845F0073324C /* MarketsViewController.swift */,
+				6B7FB0A62802390100E304FF /* Markets.storyboard */,
+				6B1AC1B7280775AE002FC991 /* MarketCardView.xib */,
+				6B1AC1BB28077695002FC991 /* MarketCardView.swift */,
+			);
+			path = Markets;
+			sourceTree = "<group>";
+		};
 		6B9B3CB327DD6FAE0073324C = {
 			isa = PBXGroup;
 			children = (
@@ -176,16 +191,15 @@
 		6B9B3CEF27DD80260073324C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6B1AC1B6280774A6002FC991 /* Markets */,
 				6B9B3CC527DD6FAE0073324C /* Main.storyboard */,
 				6B9B3CF927DE751D0073324C /* FirstViewController.swift */,
 				6B9B3CF827DE751D0073324C /* SigninViewController.swift */,
 				6B9B3CF627DE751D0073324C /* SignupViewController.swift */,
 				6B9B3CF727DE751D0073324C /* SignViewController.swift */,
 				6B9B3CF027DD844C0073324C /* HomeViewController.swift */,
-				6B9B3CF227DD845F0073324C /* LocationsViewController.swift */,
 				6B9B3CF427DD846C0073324C /* AccountViewController.swift */,
 				6B7FB0A4280210DC00E304FF /* MainTabBarController.swift */,
-				6B7FB0A62802390100E304FF /* Markets.storyboard */,
 				6B7FB0A828023FA200E304FF /* Home.storyboard */,
 				6B7FB0AA2802402400E304FF /* Account.storyboard */,
 			);
@@ -348,6 +362,7 @@
 				6B9B3CC927DD6FAE0073324C /* Assets.xcassets in Resources */,
 				6B7FB0AB2802402400E304FF /* Account.storyboard in Resources */,
 				6B9B3CC727DD6FAE0073324C /* Main.storyboard in Resources */,
+				6B1AC1B8280775AE002FC991 /* MarketCardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,11 +495,12 @@
 				6B9B3CFB27DE751D0073324C /* SignViewController.swift in Sources */,
 				6B7FB0A5280210DC00E304FF /* MainTabBarController.swift in Sources */,
 				6B9B3CFA27DE751D0073324C /* SignupViewController.swift in Sources */,
-				6B9B3CF327DD845F0073324C /* LocationsViewController.swift in Sources */,
+				6B9B3CF327DD845F0073324C /* MarketsViewController.swift in Sources */,
 				6B9B3CF527DD846C0073324C /* AccountViewController.swift in Sources */,
 				6B9B3CFC27DE751D0073324C /* SigninViewController.swift in Sources */,
 				6B9B3CC027DD6FAE0073324C /* AppDelegate.swift in Sources */,
 				6B9B3D0227DE75620073324C /* Tools.swift in Sources */,
+				6B1AC1BC28077695002FC991 /* MarketCardView.swift in Sources */,
 				6B9B3D0527DE763C0073324C /* User.swift in Sources */,
 				6B9B3D0127DE75620073324C /* ServerApi.swift in Sources */,
 				6B9B3CC227DD6FAE0073324C /* SceneDelegate.swift in Sources */,
